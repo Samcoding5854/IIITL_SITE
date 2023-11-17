@@ -1,0 +1,75 @@
+/* /components/tree-card.module.css */
+
+ 
+ .cta-background {
+	background-size: cover;
+	background-position: center center;
+	bottom: 0;
+	filter: blur(50px);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+ }
+ 
+ .container {
+	align-items: center;
+	display: flex;
+	padding: 3%;
+ }
+ 
+ .cta {
+	background: black;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	border-radius: 4%;
+ }
+ 
+ .cta:hover .cta-img {
+	top: -12%;
+	filter: brightness(70%);
+ }
+ 
+ .cta:hover .text {
+	bottom: 0;
+ }
+ 
+ .cta-img {
+	bottom: 0;
+	filter: brightness(100%);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.5s ease-in-out;
+	width: 115%;
+ }
+ 
+ .text {
+	bottom: -40%;
+	padding: 15px;
+	position: absolute;
+	transition: 0.5s ease-in-out;
+ }
+ 
+ .text h2 {
+	color: #fff;
+	display: inline-block;
+	font-weight: 300;
+	margin-bottom: 5px;
+	position: relative;
+ }
+ 
+ .text p {
+	color: #fff;
+	font-weight: 300;
+ }
+ 
+ .text:not(:hover) {
+	bottom: -14.5%;
+  }
