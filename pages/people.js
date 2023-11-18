@@ -36,9 +36,32 @@ const people = ({ people, departments }) => {
             </div>
           ))}
         </div>
-          <div className='flex m-7'>
+          {/* <div className='flex m-7'>
             <TreeCard/>
             <TreeCard/>
+          </div> */}
+          <div className='flex '>
+            {departments.map((item, index) => (
+              item?.people?.map((it, ind) => (
+                it.people?.map((ct, num) => (
+                  people.map((wm, wt) => {
+                    if (wm._id === ct._ref) {
+                      return (
+                        <div className='m-3 p-7'>
+                        <Link href={'/people/' + wm._id} key={wm._id}>
+                          <TreeCard
+                            imageUrl={urlFor(wm.picture)}
+                            title={wm.name} // Adjust this according to your Sanity data structure
+                            description={wm.role} // Adjust this according to your Sanity data structure
+                          />
+                        </Link>
+                        </div>
+                      );
+                    }
+                  })
+                ))
+              ))
+            ))}
           </div>
 
         {/* {departments.map((item, index) => (

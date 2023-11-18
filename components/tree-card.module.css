@@ -1,7 +1,6 @@
 /* /components/tree-card.module.css */
 
- 
- .cta-background {
+.cta-background {
 	background-size: cover;
 	background-position: center center;
 	bottom: 0;
@@ -17,16 +16,16 @@
  .container {
 	align-items: center;
 	display: flex;
-	padding: 3%;
+	padding: 5%;
  }
  
  .cta {
 	background: black;
 	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
-	height: 350px;
+	height: 400px;
 	overflow: hidden;
 	position: relative;
-	width: 300px;
+	width: 350px;
 	border-radius: 4%;
  }
  
